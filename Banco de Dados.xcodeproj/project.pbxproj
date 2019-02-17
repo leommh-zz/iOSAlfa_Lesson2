@@ -13,6 +13,9 @@
 		03B7E3C122181A1C00E738F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03B7E3C022181A1C00E738F9 /* Assets.xcassets */; };
 		03B7E3C422181A1C00E738F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03B7E3C222181A1C00E738F9 /* LaunchScreen.storyboard */; };
 		03B7E3CC22181A6600E738F9 /* Pessoa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7E3CB22181A6600E738F9 /* Pessoa.swift */; };
+		03B7E3CF22181E5C00E738F9 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B7E3CE22181E5C00E738F9 /* CoreData.framework */; };
+		03B7E3D2221821F700E738F9 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 03B7E3D0221821F700E738F9 /* Model.xcdatamodeld */; };
+		03B7E3D42218239500E738F9 /* PessoaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B7E3D32218239500E738F9 /* PessoaController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		03B7E3C322181A1C00E738F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03B7E3C522181A1C00E738F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03B7E3CB22181A6600E738F9 /* Pessoa.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pessoa.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		03B7E3CE22181E5C00E738F9 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		03B7E3D1221821F700E738F9 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		03B7E3D32218239500E738F9 /* PessoaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PessoaController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03B7E3CF22181E5C00E738F9 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,7 @@
 			children = (
 				03B7E3B822181A0900E738F9 /* Banco de Dados */,
 				03B7E3B722181A0900E738F9 /* Products */,
+				03B7E3CD22181E5C00E738F9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +71,18 @@
 				03B7E3C222181A1C00E738F9 /* LaunchScreen.storyboard */,
 				03B7E3C522181A1C00E738F9 /* Info.plist */,
 				03B7E3CB22181A6600E738F9 /* Pessoa.swift */,
+				03B7E3D0221821F700E738F9 /* Model.xcdatamodeld */,
+				03B7E3D32218239500E738F9 /* PessoaController.swift */,
 			);
 			path = "Banco de Dados";
+			sourceTree = "<group>";
+		};
+		03B7E3CD22181E5C00E738F9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03B7E3CE22181E5C00E738F9 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +159,8 @@
 				03B7E3BC22181A0900E738F9 /* ViewController.swift in Sources */,
 				03B7E3CC22181A6600E738F9 /* Pessoa.swift in Sources */,
 				03B7E3BA22181A0900E738F9 /* AppDelegate.swift in Sources */,
+				03B7E3D2221821F700E738F9 /* Model.xcdatamodeld in Sources */,
+				03B7E3D42218239500E738F9 /* PessoaController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +358,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		03B7E3D0221821F700E738F9 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				03B7E3D1221821F700E738F9 /* Model.xcdatamodel */,
+			);
+			currentVersion = 03B7E3D1221821F700E738F9 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 03B7E3AE22181A0800E738F9 /* Project object */;
 }
